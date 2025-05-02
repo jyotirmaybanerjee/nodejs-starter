@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import helmet from 'helmet';
 import compression from 'compression';
 import cors from 'cors';
-import { helloRoutes, userRoutes } from './routes'; 
+import routes, { helloRoutes, userRoutes } from './routes';
 import logger from './utils/logger';
 import { requestLogger } from './middlewares/requestLogger';
 import swaggerUi from 'swagger-ui-express';
@@ -22,6 +22,10 @@ app.use(requestLogger);
 app.use('/api/auth', authRoutes);
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.get('/', (_, res) => {
+  res.json({ message: 'please hit /api' });
+});
+app.use('/api', routes);
 app.use('/api', helloRoutes);
 app.use('/api', userRoutes);
 

@@ -4,7 +4,7 @@ import { Request, Response } from 'express';
 const users = [
   { id: 1, username: 'admin', email: 'admin@example.com' },
   { id: 2, username: 'user', email: 'user@example.com' },
-  { id: 3, username: 'guest', email: 'guest@example.com' }
+  { id: 3, username: 'guest', email: 'guest@example.com' },
 ];
 
 // Correct: Return type should be void, don't return the Response object

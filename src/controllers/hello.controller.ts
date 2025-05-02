@@ -5,6 +5,6 @@ import { Request, Response } from 'express';
  */
 export const sayHello = (req: Request, res: Response): void => {
   res.json({
-    message: 'Hello, welcome to the API!'
+    message: 'Hello, welcome to the API!',
   });
 };

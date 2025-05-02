@@ -25,4 +25,3 @@ export { helloRoutes, userRoutes };
 router.post('/login', loginValidator, validate, login);
 
 export default router;
-
