@@ -15,6 +15,8 @@ This is a production-ready boilerplate for a RESTful API using **Node.js**, **Ty
 - **dotenv** – Environment variable management
 - **morgan** – HTTP request logger
 - **winston** – Logging library
+- **codecov** – code coverage report
+- **Github workflow**
 
 ---
 
