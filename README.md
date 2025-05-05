@@ -2,6 +2,10 @@
 
 This is a production-ready boilerplate for a RESTful API using **Node.js**, **TypeScript**, **Express**, **JWT authentication**, **Swagger**, and **input validation** with `express-validator`. It's built with scalability, maintainability, and clarity in mind.
 
+
+[![codecov](https://codecov.io/gh/jyotirmaybanerjee/nodejs-starter/branch/main/graph/badge.svg)](https://codecov.io/gh/jyotirmaybanerjee/nodejs-starter)
+
+
 ---
 
 ## 🛠 Tech Stack
