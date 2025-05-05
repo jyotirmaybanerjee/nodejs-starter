@@ -1,5 +1,6 @@
 import swaggerJsDoc from 'swagger-jsdoc';
 import { Options } from 'swagger-jsdoc';
+import { SwaggerSpec } from '../types/swagger';
 
 const options: Options = {
   definition: {
@@ -15,8 +16,8 @@ const options: Options = {
       },
     ],
   },
-  apis: ['./src/routes/*.ts'],
+  apis: ['./src/routes/*.ts', './src/auth/*.ts'],
 };
 
-const swaggerSpec = swaggerJsDoc(options);
+const swaggerSpec: SwaggerSpec = swaggerJsDoc(options) as SwaggerSpec;
 export default swaggerSpec;

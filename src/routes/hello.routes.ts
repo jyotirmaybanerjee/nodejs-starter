@@ -5,7 +5,7 @@ const router = Router();
 
 /**
  * @swagger
- * /hello:
+ * /v1/hello:
  *   get:
  *     summary: Return a hello world message
  *     tags: [Hello]
@@ -21,6 +21,6 @@ const router = Router();
  *                   type: string
  *                   example: "Hello, welcome to the API!"
  */
-router.get('/hello', sayHello);
+router.get('/v1/hello', sayHello);
 
 export default router;

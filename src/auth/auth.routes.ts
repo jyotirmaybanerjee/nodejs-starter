@@ -7,7 +7,7 @@ const router = Router();
 
 /**
  * @swagger
- * /auth/login:
+ * /v1/login:
  *   post:
  *     summary: Log in and get a JWT token
  *     tags: [Auth]
@@ -43,6 +43,6 @@ const router = Router();
  *       422:
  *         description: Validation error
  */
-router.post('/login', loginValidator, validate, login);
+router.post('/v1/login', loginValidator, validate, login);
 
 export default router;

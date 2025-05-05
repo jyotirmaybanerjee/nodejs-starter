@@ -5,7 +5,7 @@ const router = Router();
 
 /**
  * @swagger
- * /users:
+ * /v1/users:
  *   get:
  *     summary: Retrieve the list of users
  *     tags: [Users]
@@ -32,6 +32,6 @@ const router = Router();
  *                         type: string
  *                         example: admin@example.com
  */
-router.get('/users', getUsers);
+router.get('/v1/users', getUsers);
 
 export default router;
