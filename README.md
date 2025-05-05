@@ -16,8 +16,14 @@ This is a production-ready boilerplate for a RESTful API using **Node.js**, **Ty
 - **Swagger** – API documentation
 - **dotenv** – Environment variable management
 - **morgan** – HTTP request logger
+- **CORS** – 
+- **helmet** – 
+- **compression** – 
 - **winston** – Logging library
 - **codecov** – code coverage report
+- **JEST** – Unit test
+- **ESLINT** – Linting 
+- **PRETTIER** – 
 - **Github workflow**
 
 ---
